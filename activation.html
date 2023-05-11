@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="shorcut icon" href="" />
+    <title>Activar tarjeta - Go Adventour</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Alex Pérez Montero" />
+
+    <meta name="application-name" content="Sitio web Go Adventour" />
+
+    <meta name="theme-color" content="#000000" />
+    <meta name="msapplication-navbutton-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/58ca5186f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header class="wrapper_header">
+      <div class="container-lg">
+        <div class="sec_header">
+          <div class="content_brand">
+            <a href="/">
+              <img src="imgs/logo-benefits.svg" alt="Go Adventour Benefits" />
+            </a>
+          </div>
+          <nav class="content_nav">
+            <a href="/">BENEFICIOS</a>
+            <a href="/">ESTABLECIMIENTOS</a>
+            <a href="/">COMPRAS</a>
+            <a href="/">CONTACTO</a>
+          </nav>
+          <div class="content_options_menu">
+            <div class="dropdown">
+              <button
+                class="btn-idioma dropdown-toggle"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img class="ico" src="imgs/bandera.svg" alt="idioma" />
+                <span>ES</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">ES</button></li>
+                <li><button class="dropdown-item" type="button">EN</button></li>
+              </ul>
+            </div>
+            <a class="btns btn_green" href="/activation.html"
+              ><img src="imgs/ico_card.svg" alt="Activar tarjeta" />
+              <span>Activar tarjeta</span></a
+            >
+            <span class="btn_menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="wrapper_activation_page"
+      style="background-image: url(imgs/bg-activar-tarjeta.svg)"
+    >
+      <div class="section_activation">
+        <div class="sec_img_ativation">
+          <img src="imgs/img_activation.svg" alt="Activar tarjeta" />
+        </div>
+        <div class="sec_form_activation">
+          <form>
+            <div class="form_titulos">
+              <span class="line"></span>
+              <h3 class="ttl_sections">
+                Ingresa tus datos para activar tu tarjeta.
+              </h3>
+            </div>
+
+            <div class="mb-3 box_input_form">
+              <label for="numcard" class="form-label">Número de tarjeta</label>
+              <input
+                type="text"
+                class="form-control"
+                id="numcard"
+                placeholder="Ingresar número de tarjeta"
+              />
+              <span class="ico_in_form"
+                ><i class="fa-solid fa-credit-card"></i
+              ></span>
+              <button class="btn_scan">
+                <i class="fa-solid fa-camera"></i> <span>Escanear QR</span>
+              </button>
+            </div>
+
+            <div class="mb-3 box_input_form">
+              <label for="nombreuser" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombreuser"
+                placeholder="Nombre"
+              />
+              <span class="ico_in_form"><i class="fa-solid fa-user"></i></span>
+            </div>
+
+            <div class="mb-3 box_input_form">
+              <label for="tel" class="form-label">Teléfono</label>
+              <div class="row">
+                <div class="col a">
+                  <select class="form-select">
+                    <option selected>+52</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col b">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ingresar teléfono"
+                  />
+                </div>
+              </div>
+              <span class="ico_in_form"><i class="fa-solid fa-phone"></i></span>
+            </div>
+
+            <div class="mb-3 box_input_form">
+              <label for="nombreuser" class="form-label"
+                >Correo electrónico</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="nombreuser"
+                placeholder="Ingresar correo electrónico"
+              />
+              <span class="ico_in_form"
+                ><i class="fa-solid fa-envelope"></i
+              ></span>
+            </div>
+
+            <div class="mb-3 box_input_form">
+              <label for="genero" class="form-label">Género</label>
+              <select class="form-select">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+              <span class="ico_in_form"
+                ><i class="fa-solid fa-venus-mars"></i
+              ></span>
+            </div>
+
+            <div class="mb-4 box_input_form">
+              <label for="cumple" class="form-label">Fecha de cumpleaños</label>
+              <input
+                type="date"
+                class="form-control"
+                id="cumple"
+                placeholder="Seleccionar cumpleaños"
+              />
+              <span class="ico_in_form"><i class="fa-solid fa-gift"></i></span>
+            </div>
+            <button
+              type="button"
+              class="btns btn_green w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Activar tarjeta
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="wrapper_footer">
+      <div class="container_foot">
+        <img src="imgs/logo-benefits.svg" alt="Go Adventour Benefits" />
+        <div class="sec_item_social">
+          <a href="#" target="_blank" class="box_item_rsocial">
+            <img
+              src="imgs/ico-facebook.svg"
+              alt="Facebook Go Adventour Benefits"
+            />
+            <span>FACEBOOK</span>
+          </a>
+          <a href="#" target="_blank" class="box_item_rsocial">
+            <img
+              src="imgs/ico-insta.svg"
+              alt="Instagram Go Adventour Benefits"
+            />
+            <span>INSTAGRAM</span>
+          </a>
+          <a href="#" target="_blank" class="box_item_rsocial">
+            <img src="imgs/ico-yt.svg" alt="Youtube Go Adventour Benefits" />
+            <span>YOUTUBE</span>
+          </a>
+        </div>
+        <div class="sec_links_share">
+          <a class="btns btn_grey" href="mailto:"
+            ><span><i class="fa-sharp fa-regular fa-envelope"></i></span> Correo
+            electrónico</a
+          >
+          <a class="btns btn_green" href="mailto:"
+            ><span><i class="fa-brands fa-whatsapp"></i></span> Enviar
+            WhatsApp</a
+          >
+        </div>
+      </div>
+      <div class="footbar">
+        <div class="container-lg">
+          <div class="cols _one">
+            <div>GoAdventour 2023</div>
+            <!-- <div class="dotgreen">&#8226</div> -->
+            <div>Todos los derechos son reservados</div>
+          </div>
+          <div class="cols _two">
+            <div><a href="#">Términos y condiciones</a></div>
+            <!-- <div class="dotgreen">&#8226</div> -->
+            <div><a href="#">Aviso de privacidad</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade wrapper_modal_welcome"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              class="ico_card_check"
+              src="imgs/ico_card_check.png"
+              alt="CHECK"
+            />
+            <img
+              class="logo_benefits"
+              src="imgs/logo-benefits.svg"
+              alt="Go Adventour"
+            />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="">Bienvenido, Brayam!</h5>
+            <p class="mb-4 fw_300">
+              Tu tarjeta ha sido activada correctamente, puedes utilizar tu
+              dinero digital en los establecimientos afiliados.
+            </p>
+            <div>
+              <p class="fw-400 m-0">
+                <small>Tu saldo en dinero digital es:</small>
+              </p>
+              <h5>$1,500</h5>
+            </div>
+            <hr />
+            <div>
+              <p class="fw-400 mb-1">
+                <small>Descarga la App GoAdventour Benefits</small>
+              </p>
+              <img
+                src="imgs/playstore.svg"
+                alt="Descarga la App GoAdventour Benefits en playstore"
+              />
+              <img
+                src="imgs/appstore.svg"
+                alt="Descarga la App GoAdventour Benefits en appstore"
+              />
+              <div class="text-end">
+                <button
+                  type="button"
+                  class="btns btn_green"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  Activar <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        headerChange();
+      });
+    </script>
+  </body>
+</html>
